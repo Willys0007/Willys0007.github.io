@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/ansökstyle.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="#" class="nav-branding">ByggBoom</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a href="../index.html#om-oss" class="nav-link">Om Oss</a>
+        </li>
+        <li class="nav-item">
+          <a href="../index.html#tjänster" class="nav-link">Tjänster</a>
+        </li>
+        <li class="nav-item">
+          <a href="../#kontakta" class="nav-link">Kontakta Oss</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    <article>
+      <div class="flex-parent">
+        <div class="title-ansökan">
+          <h1>Genomför följande instruktioner för att ansöka</h1>
+        </div>
+      </div>
+      <div class="center">
+        <form action="submit_form.php">
+          <input
+            type="text"
+            id="full-name"
+            name="full_name"
+            placeholder="Fullt namn"
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+
+          <input
+            type="tel"
+            id="telefonummer"
+            name="tel"
+            placeholder="Telefonnummer"
+          />
+
+          <div>
+            <label for="age" id="birthday">Över 18 år gammal</label>
+            <input type="checkbox" id="age" required />
+          </div>
+
+          <input
+            type="text"
+            id="address"
+            name="address"
+            required
+            placeholder="Address"
+          />
+
+          <label for="personligt-brev">Personligt brev</label>
+          <textarea
+            name="persoligt-brev"
+            id="personligt-brev"
+            rows="5"
+            cols="50"
+            required
+          ></textarea>
+
+          <label for="CV">CV</label>
+          <input type="file" name="CV" id="CV" />
+          <div class="flex-parent">
+            <button type="submit" id="submit">Skicka in</button>
+          </div>
+        </form>
+      </div>
+    </article>
+
+    <footer>
+      <div>
+        <div id="kontakta"><h2>Kontakta Oss</h2></div>
+        <div id="information-left"><h2>information</h2></div>
+        <div id="move-right">
+          <a href="#top">
+            <img class="btn" src="../bilder/Home.png" alt="send-to-top"
+          /></a>
+        </div>
+      </div>
+      <div>
+        <div id="make-smaller">
+          <ul id="footer-information">
+            <li class="information">
+              <img src="../bilder/Phone.png" alt="Phone" />
+              <h3>070-362-2609</h3>
+            </li>
+            <li class="information tablett">
+              <img src="../bilder/mail.png" alt="Mail" />
+              <h3>ByggBoom@email.com</h3>
+            </li>
+            <li class="information">
+              <img src="../bilder/location_on.png" alt="Location" />
+              <h3>Sundsbruk, Söndagsvägen 27</h3>
+            </li>
+            <li class="information tablett">
+              <img src="../bilder/Star_6.png" alt="Rating" />
+              <h3>4.2 / 5</h3>
+            </li>
+          </ul>
+        </div>
+        <div id="flex-parent">
+          <div class="socials">
+            <a href="https://www.youtube.com/"
+              ><img src="../bilder/Youtube.png" alt="Youtube"
+            /></a>
+            <a href="https://www.instagram.com"
+              ><img src="../bilder/instagram.png" alt="Instagram"
+            /></a>
+            <a href="https://www.x.com"
+              ><img src="../bilder/Twitter.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+
+        <div id="flex-sponsors">
+          <ul id="sponsors">
+            <li><img src="../Bilder/Permascand.png" alt="Permascand" /></li>
+            <li><img src="../bilder/image 8 (1).png" alt="Valmet" /></li>
+            <li><img src="../Bilder/Byggfirma.png" alt="Byggfirma AB" /></li>
+            <li><img src="../Bilder/Bygghjälp.png" alt="ByggHjälp AB" /></li>
+          </ul>
+        </div>
+      </div>
+      <script src="../JS/script.js"></script>
+    </footer>
+  </body>
+</html>
